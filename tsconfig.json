@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2019", // Para qual versão do JS o TS será compilado
+    "moduleResolution": "node", // Diz ao compilador onde buscar os módulos
+    "module": "commonjs", // Especifica de que forma a geração do código do módulo será feita
+    "lib": ["es2019"], // Inclui os tipos do ecmascript especificado
+    "sourceMap": true, // Gera arquivos map para ser usado para debugar o TS
+    "outDir": "dist", // Diretorio onde os arquivos compilados ficarão
+    "strict": true, // Ativa strict mode
+    "noImplicitAny": true, // Não permite que o ts tipe como any automaticamente
+    "strictNullChecks": true, // Não permite usar null e undefined para inicializar variaveis
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "resolveJsonModule": true,
+    "alwaysStrict": true,
+    "removeComments": true, // Remove os comentarios quando for compilar
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".", // Root do projeto
+    "rootDirs": [ // Diretório onde serão armazenados os fontes do projeto
+      "./src"
+    ],
+    "experimentalDecorators": true, // Permite o uso de decorators
+    "emitDecoratorMetadata": true // Permite o uso de decorators
+  },
+  "include": [ // Arquivos que deverão ser compilados
+    "./src/**/*.ts"
+  ],
+  "exclude": [ // Arquivos que deverão ser ignorados na compilação
+    "./node_modules/*",
+    "dist",
+    "./src/**/*.test.ts", // exclui os arquivos de testes unitarios
+    "./src/**/*.end2end.ts"  // exclui os arquivos de testes de integração
+  ]
+}
