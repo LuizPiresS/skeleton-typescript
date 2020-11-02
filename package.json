@@ -1,0 +1,16 @@
+{
+  "name": "skeleton-typescript",
+  "description": "A skeleton repository for my packages",
+  "repository": "https://github.com/LuizPiresS/skeleton-typescript",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Luiz Pires <me@lps.dev.br>",
+  "keywords": [
+    "typescript",
+    "skeleton",
+    "package",
+    "api",
+    "node"
+  ]
+}
