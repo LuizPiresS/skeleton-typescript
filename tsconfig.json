@@ -5,15 +5,15 @@
     "module": "commonjs", // Especifica de que forma a geração do código do módulo será feita
     "lib": ["es2019"], // Inclui os tipos do ecmascript especificado
     "sourceMap": true, // Gera arquivos map para ser usado para debugar o TS
-    "outDir": "dist", // Diretorio onde os arquivos compilados ficarão
+    "outDir": "dist", // Diretório onde os arquivos compilados ficarão
     "strict": true, // Ativa strict mode
     "noImplicitAny": true, // Não permite que o ts tipe como any automaticamente
-    "strictNullChecks": true, // Não permite usar null e undefined para inicializar variaveis
+    "strictNullChecks": true, // Não permite usar null e undefined para inicializar variáveis
     "strictFunctionTypes": true,
     "noImplicitThis": true,
     "resolveJsonModule": true,
     "alwaysStrict": true,
-    "removeComments": true, // Remove os comentarios quando for compilar
+    "removeComments": true, // Remove os comentários quando for compilar
     "noImplicitReturns": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -30,7 +30,7 @@
   "exclude": [ // Arquivos que deverão ser ignorados na compilação
     "./node_modules/*",
     "dist",
-    "./src/**/*.test.ts", // exclui os arquivos de testes unitarios
+    "./src/**/*.test.ts", // exclui os arquivos de testes unitários
     "./src/**/*.end2end.ts"  // exclui os arquivos de testes de integração
   ]
 }
