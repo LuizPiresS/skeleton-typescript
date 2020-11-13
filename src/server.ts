@@ -2,6 +2,8 @@ import { Server } from '@overnightjs/core'
 import bodyParser from 'body-parser'
 import { Application } from 'express'
 
+import connection from './data/databaseConnection'
+
 export class SetupServer extends Server {
   constructor (private port = 1313) {
     super()
@@ -36,9 +38,12 @@ export class SetupServer extends Server {
   }
 
   private async databaseSetup (): Promise<void> {
+    await connection.create()
   }
 
-  public async close (): Promise<void> {}
+  public async close (): Promise<void> {
+    this.close()
+  }
 
   public start (): void {
   }

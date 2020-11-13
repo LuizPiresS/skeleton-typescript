@@ -1,7 +1,14 @@
 {
   "App": {
     "port": 3000,
-    "database": {},
+    "database": {
+      "type": "postgres",
+      "host": "database",
+      "port": 5432,
+      "username": "user",
+      "password": "pass",
+      "database": "development"
+    },
     "auth": {
       "key": "some-key",
       "tokenExpiresIn": "20000000"

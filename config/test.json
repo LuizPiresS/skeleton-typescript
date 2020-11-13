@@ -1,7 +1,14 @@
 {
   "App": {
     "resources": {},
-    "database": {},
+    "database": {
+      "type": "postgres",
+      "host": "database",
+      "port": 5432,
+      "username": "user",
+      "password": "pass",
+      "database": "development"
+    },
     "logger": {}
   }
 }
